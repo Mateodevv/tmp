@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakte</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo von Alex" >
+      </a>
+    <ul>
+      <li><a href="index.html">Startseite</a></li>
+      <li class="aktiv"><a href="kontakte.html">Kontakte</a></li>
+    </ul>
+    </nav>
+    <div class="kasten">
+    <div class="uebrschrift">
+      <h2>Wenn du lust hast kannst du mir ne E-mail schicken</h2>
+    </div>
+    <from action="contactform.php" method="post">
+    <div class="textname">
+      <input type="text" name="name" placeholder="Ihr Name" size="25"/>
+    </div>
+    <div class="textemailadresse">
+      <input type="email" name="email" placeholder="Ihre Email-Adresse" size="25"/>
+    </div>
+    <div class="textbetreff">
+      <input type="text" name="subject" placeholder="Betreff" size="25"/>
+    </div>
+    <div class="textfeld">
+      <textarea name="message"  placeholder="Nachricht"></textarea>
+    </div>
+    <div class="button">
+      <button name="submit" type="submit">Nachricht senden</button>
+    </div>
+  </form>
+</div>
+  </body>
+</html>
